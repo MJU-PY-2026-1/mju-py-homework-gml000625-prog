@@ -182,7 +182,96 @@
   * 
 [과제 2차 ai 협업 과정.pdf](https://github.com/user-attachments/files/27129649/2.ai.pdf)
 
-  * [2차과제_실행결과.jpg]
+  * [2차과제_실행결과.jpg[main.py](https://github.com/user-attachments/files/27146193/main.py)
+<img width="1972" height="1602" alt="KakaoTalk_Photo_2026-04-28-09-19-12 2" src="https://github.c# 파일이름 :wafer_system_py     
+# 작 성 자 :lee chan hee
+
+wafer_list = []
+
+print("===웨이퍼 결함 분석 시스템 ===")
+
+#최소 3개 입력
+for i in range(3) :
+    print(f"\n[{i+1}번째 웨이퍼 입력]")
+
+    #1. 입력
+    wafer_id = input("웨이퍼 번호: ")
+    process_name = input("공정명:")
+    defect_count = int(input("결함 개수: "))
+    defect_area = float(input("결함 면적: "))
+    defect_location = input("결함위치 center/ edge/ other): ")
+
+    #2. 점수 계산
+    count_score = defect_count * 10
+
+    if defect_area < 10:
+        area_score = 10
+    elif defect_area < 50 :
+        area_score = 30
+    else :
+        area_score = 60
+
+    if defect_location == "center" :
+        location_score = 50
+    elif defect_location == "edge" :
+        location_score = 30
+    else:
+        location_score = 10
+
+    total_score = count_score + area_score + location_score
+
+    #3. 상태 판정
+    if defect_count >= 10 and defect_location == "center" :
+        grade = "긴급위험"
+
+    elif defect_area > 80 or defect_location == "center" :
+        grade = "특별주의"
+
+    elif total_score < 100:
+        grade = "정상"
+
+    elif total_score < 150:
+        grade = "주의"
+
+    else :
+        grade = "위험"
+
+    #4. 저장
+    wafer = [
+        wafer_id,
+        process_name,
+        defect_count,
+        defect_area,
+        defect_location,
+        total_score,
+        grade
+    ]
+    
+    wafer_list.append(wafer)
+
+#5. 출력
+print("\n === 분석결과 ===")
+
+for i, wafer in enumerate(wafer_list):
+    print(f"""
+[{i+1}번 웨이퍼]
+번호 : {wafer[0]}
+공정명 : {wafer[1]}
+결함 개수: {wafer[2]}
+결함 면적: {wafer[3]}
+결함 위치: {wafer[4]}
+결함 점수: {wafer[5]}
+상태: {wafer[6]}
+--------------------------
+""")
+
+
+
+
+om/user-attachments/assets/f43fef94-9c06-4e49-bfb0-238894579038" />
+]
+  *
+
 <br>
 
 ## 🟨 [3차 과제: V3.0] 무한 루프와 메뉴 시스템 (반복문) - 향후 작성 예정
