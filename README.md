@@ -112,6 +112,7 @@
   * [1차_AI협업캡처.pdf 첨부 완료] (첨부 후 링크[1차_AI협업캡처_최종.pdf]
   * (https://github.com/user-attachments/files/26423820/1._AI._.pdf)
 )
+<img width="1972" height="1602" alt="2차과제_실행결과" src="https://github.com/user-attachments/assets/113bb895-dd7a-4652-bc8e-66379296cb3c" />
 
 <br>
 
