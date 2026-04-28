@@ -114,6 +114,95 @@
 )
 <img width="1972" height="1602" alt="2차과제_실행결과" src="https://github.com/user-attachments/assets/113bb895-dd7a-4652-bc8e-66379296cb3c" />
 
+# 파일이름 :wafer_system_py     
+# 작 성 자 :lee chan hee
+
+wafer_list = []
+
+print("===웨이퍼 결함 분석 시스템 ===")
+
+#최소 3개 입력
+for i in range(3) :
+    print(f"\n[{i+1}번째 웨이퍼 입력]")
+
+    #1. 입력
+    wafer_id = input("웨이퍼 번호: ")
+    process_name = input("공정명:")
+    defect_count = int(input("결함 개수: "))
+    defect_area = float(input("결함 면적: "))
+    defect_location = input("결함위치 center/ edge/ other): ")
+
+    #2. 점수 계산
+    count_score = defect_count * 10
+
+    if defect_area < 10:
+        area_score = 10
+    elif defect_area < 50 :
+        area_score = 30
+    else :
+        area_score = 60
+
+    if defect_location == "center" :
+        location_score = 50
+    elif defect_location == "edge" :
+        location_score = 30
+    else:
+        location_score = 10
+
+    total_score = count_score + area_score + location_score
+
+    #3. 상태 판정
+    if defect_count >= 10 and defect_location == "center" :
+        grade = "긴급위험"
+
+    elif defect_area > 80 or defect_location == "center" :
+        grade = "특별주의"
+
+    elif total_score < 100:
+        grade = "정상"
+
+    elif total_score < 150:
+        grade = "주의"
+
+    else :
+        grade = "위험"
+
+    #4. 저장
+    wafer = [
+        wafer_id,
+        process_name,
+        defect_count,
+        defect_area,
+        defect_location,
+        total_score,
+        grade
+    ]
+    
+    wafer_list.append(wafer)
+
+#5. 출력
+print("\n === 분석결과 ===")
+
+for i, wafer in enumerate(wafer_list):
+    print(f"""
+[{i+1}번 웨이퍼]
+번호 : {wafer[0]}
+공정명 : {wafer[1]}
+결함 개수: {wafer[2]}
+결함 면적: {wafer[3]}
+결함 위치: {wafer[4]}
+결함 점수: {wafer[5]}
+상태: {wafer[6]}
+--------------------------
+""")
+
+
+
+
+
+
+[main.py](https://github.com/user-attachments/files/27146311/main.py)
+
 <br>
 
 ## 🟩 [2차 과제: V1.0] 입출력 + 리스트 + 조건문 - 향후 작성 예정
