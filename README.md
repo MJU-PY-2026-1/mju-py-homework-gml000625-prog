@@ -182,7 +182,12 @@
   * 
 [과제 2차 ai 협업 과정.pdf](https://github.com/user-attachments/files/27129649/2.ai.pdf)
 
-  * [2차과제_실행결과.jpg[main.py](https://github.com/user-attachments/files/27146193/main.py)
+  * <img width="1972" height="1602" alt="2차과제_실행결과" src="https://github.com/user-attachments/assets/ac7bcfbf-a906-4ea0-877c-450127a4ddbe" />
+
+  *
+  *
+  *
+  * [main.py](https://github.com/user-attachments/files/27146193/main.py)
 <img width="1972" height="1602" alt="KakaoTalk_Photo_2026-04-28-09-19-12 2" src="https://github.c# 파일이름 :wafer_system_py     
 # 작 성 자 :lee chan hee
 
