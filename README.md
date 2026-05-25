@@ -491,9 +491,10 @@ if, elif, else, while, def 뒤에 콜론 :을 빠뜨리거나 들여쓰기를 �
 
 
 
-
-[3차 ai 협업.pdf](https://github.com/user-attachments/files/28207894/3.ai.pdf)
-[Uploading 3차 ai 협업.pdf…]()
+<img width="1298" height="2468" alt="KakaoTalk_Photo_2026-05-25-16-40-31" src="https://github.com/user-attachments/assets/a756a55b-8699-4091-8eeb-f6a448a607e4" />
+<img width="966" height="1470" alt="KakaoTalk_Photo_2026-05-25-16-40-49" src="https://github.com/user-attachments/assets/60f8119c-6150-498f-bedb-6b012d7355c4" />
+[3차 ai 협업.pdf](https://github.com/user-attachments/files/28210717/3.ai.pdf)
+[Uploading main-2.py…]()
 
 
 ### 🟥 [4차 과제: V4.0] 모듈화 및 데이터 확장 (배열과 함수) - 🌟최종 완성 -- 향후 작성 예정
