@@ -567,5 +567,7 @@ with open()과 write()를 사용하여 웨이퍼 데이터를 wafer_data.txt 파
 ### **📁 증빙 자료:**
   * [4차_AI협업캡처.pdf 첨부 완료] (첨부 후 [4차과제 al .pdf](https://github.com/user-attachments/files/28880550/4.al.pdf)
 링크)
-  * [4차과제_실행결과.jpg]
-<br>
+  * [4차과제_실행결과.jpg][결과캡쳐본.pdf](https://github.com/user-attachments/files/28881711/default.pdf)
+
+<br>[결과캡쳐본.pdf](https://github.com/user-attachments/files/28881718/default.pdf)
+
